@@ -53,12 +53,15 @@ main {
     grid-template-rows: 1fr 2fr;
 }
 
-.subtitle {
-    border: 1px solid var(--yellow);
+#subtitle {
+    border: 1px solid var(--grey50);
+    border-radius: 50px;
+    margin: 2em 4em;
+    padding: 1em;
 }
 
 #title {
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
 }
 
