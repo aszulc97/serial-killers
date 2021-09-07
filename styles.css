@@ -54,6 +54,7 @@ main {
 }
 
 #subtitle {
+    grid-row: 1/2;
     border: 1px solid var(--grey50);
     border-radius: 50px;
     margin: 2em 4em;
@@ -62,6 +63,16 @@ main {
 
 #title {
     font-size: 70px;
+    text-align: center;
+}
+
+#pic-grid {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 2em 4em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -74,7 +85,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    
 }
 
 footer p {
