@@ -10,45 +10,51 @@
 </head>
 
 <body>
-    <header class="nav-bar"></header>
-    <h1 id="title">Serial Killers</h1>
-    <section id="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem numquam magnam,
-        quia quidem itaque dolores inventore sint quo, dolor corrupti incidunt nulla aliquam consequuntur voluptates
-        vitae porro quas aspernatur!
-        Et ipsum adipisci labore doloremque cumque explicabo dicta, maxime perferendis, vel atque fugit soluta totam
-        rerum, minima quas dolores odit repellat. Laborum atque necessitatibus beatae voluptatibus ex, neque at
-        voluptas.
-    </section>
-    <main id="pic-grid"></main>
+    <header class="nav-bar">
+        <h1 class="logo">LOGO</h1>
+    </header>
+    <main id="pic-grid">
+        <section class="topdescr">
+            <h1 id="title">Serial Killers</h1>
+            <p id="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem numquam magnam,
+            quia quidem itaque dolores inventore sint quo, dolor corrupti incidunt nulla aliquam consequuntur voluptates
+            vitae porro quas aspernatur!
+            Et ipsum adipisci labore doloremque cumque explicabo dicta, maxime perferendis, vel atque fugit soluta totam
+            rerum, minima quas dolores odit repellat. Laborum atque necessitatibus beatae voluptatibus ex, neque at
+            voluptas.
+            </p>
+        </section>
+        
+        <template id="pic-card">
+            <a href="" class="">
+                <div class="sk-pic"></div>
+                <h2 class="sk-name">
+                    </h1>
+            </a>
+        </template>
+        
+        <template id="sk-card">
+            <img src="" class="skc-pic">
+            <div class="skc-txt">
+                <h1 class="skc-name"></h1>
+                <h2 class="sk-real-name"></h2>
+                <div class="close-button">X</div>
+                <ul>
+                    <li>Location: <span class="location"></span></li>
+                    <li>Years of Activity: <span class="years"></span></li>
+                    <li>Gender: <span class="killstreak"></span></li>
+                    <li>Motive: <span class="motive"></span></li>
+                    <li>Modus Operandi: <span class="weapon"></span></li>
+                </ul>
+                <p class="bio"></p>
+                <button class="read-more"><a href="" class="read-link">Read More</a></button>
+            </div>
+        </template>
+    </main>
     <footer>
         <p>This Web is an assignment for KEA. Source: <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
         </p>
     </footer>
 </body>
-<template id="pic-card">
-    <a href="" class="">
-        <div class="sk-pic"></div>
-        <h2 class="sk-name">
-            </h1>
-    </a>
-</template>
-
-<template id="sk-card">
-    <img src="" class="skc-pic">
-    <div class="skc-txt">
-        <h1 class="skc-name"></h1>
-        <h2 class="sk-real-name"></h2>
-        <div class="close-button">X</div>
-        <ul>
-            <li>Location: <span class="location"></span></li>
-            <li>Years of Activity: <span class="years"></span></li>
-            <li>Gender: <span class="killstreak"></span></li>
-            <li>Motive: <span class="motive"></span></li>
-            <li>Modus Operandi: <span class="weapon"></span></li>
-        </ul>
-        <p class="bio"></p>
-        <button class="read-more"><a href="" class="read-link">Read More</a></button>
-    </div>
-</template>
-
 </html>
