@@ -18,9 +18,12 @@ function handlePics(data) {
 
 function showPic(sk) {
   console.log(sk);
+  console.log(sk.alias);
   const shCard = document.querySelector("#pic-card").content;
   const clone = shCard.cloneNode(true);
   clone.querySelector(".sk-name").textContent = sk.alias;
+  const parent = document.querySelector("#pic-grid");
+  parent.appendChild(clone);
 }
 
 // function showPic(sk) {
