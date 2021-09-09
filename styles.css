@@ -206,7 +206,8 @@ li span {
   background-color: var(--bg-color);
   width: 200px;
   border-radius: 20px !important;
-  left: 17em;
+  left: 22em;
+  bottom: -2em;
 }
 
 .read-link {
