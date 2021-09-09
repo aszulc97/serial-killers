@@ -244,6 +244,50 @@ p a {
 
 /*comments section*/
 
+.commentsHeader {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 textarea {
-  width: 24rem;
+  width: 40rem;
+  text-align: start;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  background-color: var(--grey100);
+  color: var(--grey50);
+  text-align: center;
+}
+
+.commentName {
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.commentText {
+  height: 5rem;
+}
+
+.commentSubmit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  background-color: var(--grey100);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 4rem;
+  color: var(--yellow);
+}
+
+.comment {
+  margin: 2rem 8rem 2rem 8rem;
+}
+
+.comment > h4 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
