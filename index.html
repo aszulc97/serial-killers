@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serial Killers Database</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="data:;base64,=">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
 
-<body>
+  <body>
     <header class="nav-bar">
-        <a href="index.html">
-            <img id="logo" src="logo.png" alt="logo">
-        </a>
+      <a href="index.html">
+        <img id="logo" src="logo.png" alt="logo" />
+      </a>
     </header>
     <main>
-        <section class="sub-section">
-            <p id="subtitle">
-                Welcome! Here you can find out about our top serial killers and their stories. Learn what kind of weapons and methods they used, as well as their motif, what their killstreak was, etc. Rated from bad to worse using our unique <q>Gore Rating</q> system.             </p>
-        </section>
-        <section id="pic-grid">
+      <section class="sub-section">
+        <p id="subtitle">
+          Welcome! Here you can find out about our top serial killers and their stories. Learn what
+          kind of weapons and methods they used, as well as their motif, what their killstreak was,
+          etc. Rated from bad to worse using our unique <q>Gore Rating</q> system.
+        </p>
+      </section>
+      <section id="pic-grid"></section>
+      <template id="pic-card">
+        <a href="" class="sk-link">
+          <img src="candy-man.jpeg" alt="" class="sk-pic" />
+          <h2 class="sk-name"></h2>
+        </a>
+      </template>
 
-        </section>
-        <template id="pic-card">
-            <a href="" class="sk-link">
-                <img src="candy-man.jpeg" alt="" class="sk-pic">
-                <h2 class="sk-name"></h2>
-            </a>
-        </template>
-
-        <section id="sk-pop-up" class="hidden">
-            <div id="sk-card">
-                <img src="/candy-man.jpeg" class="skc-pic">
-                <div class="skc-txt">
-                    <h1 class="skc-name"></h1>
-                    <h2 class="sk-real-name"></h2>
-                    <button class="close-me"><a href="index.html" class="close-button">X</a></button>
-                    <ul>
-                        <li>Location: <span class="location"></span></li>
-                        <li>Years of Activity: <span class="years"></span></li>
-                        <li>Gender: <span class="killstreak"></span></li>
-                        <li>Motive: <span class="motive"></span></li>
-                        <li>Modus Operandi: <span class="weapon"></span></li>
-                    </ul>
-                    <p class="bio"></p>
-                    <button class="read-more"><a href="" class="read-link">Read More</a></button>
-                </div>
-            </div>
-        </section>
+      <section id="sk-pop-up" class="hidden">
+        <div id="sk-card">
+          <img src="/candy-man.jpeg" class="skc-pic" />
+          <div class="skc-txt">
+            <h1 class="skc-name"></h1>
+            <h2 class="sk-real-name"></h2>
+            <button class="close-me"><a href="index.html" class="close-button">X</a></button>
+            <ul>
+              <li>Location: <span class="location"></span></li>
+              <li>Years of Activity: <span class="years"></span></li>
+              <li>Killstreak: <span class="killstreak"></span></li>
+              <li>Motive: <span class="motive"></span></li>
+              <li>Modus Operandi: <span class="weapon"></span></li>
+            </ul>
+            <p class="bio"></p>
+            <button class="read-more"><a href="" class="read-link">Read More</a></button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>This website is an assignment for <a href="https://kea.dk/">KEA</a> and is for informational purposes only. Source: <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
-        </p>
+      <p>
+        This website is an assignment for <a href="https://kea.dk/">KEA</a> and is for informational
+        purposes only. Source: <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+      </p>
     </footer>
-</body>
+  </body>
 
-<script src="myjs.js"></script>
-
+  <script src="myjs.js"></script>
 </html>
