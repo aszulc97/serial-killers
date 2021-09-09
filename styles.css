@@ -24,6 +24,8 @@
 body {
   font-family: var(--secondary-font);
   background-color: var(--bg-color);
+  background-image: url("/darkbackground.png");
+  background-size: contain;
   color: var(--main-text-color);
 }
 
