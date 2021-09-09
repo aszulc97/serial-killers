@@ -18,6 +18,7 @@ fetch(url, options)
 function showProfile(sk) {
   document.querySelector(
     ".profile-pic"
-  ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.jpg`;
-  document.querySelector(".sk-info").textContent = sk.info;
+  ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.png`;
+  document.querySelector(".sk-alias").innerHTML = sk.alias;
+  document.querySelector(".sk-info").innerHTML = sk.info;
 }

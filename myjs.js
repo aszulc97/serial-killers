@@ -21,17 +21,17 @@ function showPic(sk) {
   const shCard = document.querySelector("#pic-card").content;
   const clone = shCard.cloneNode(true);
   clone.querySelector(".sk-name").textContent = sk.alias;
-  // clone.querySelector(
-  //   ".sk-pic"
-  // ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.jpg`;
+  clone.querySelector(
+    ".sk-pic"
+  ).src = `https://sh1ban.github.io/pictures/${sk.id}.png`;
   const aEl = clone.querySelector(".sk-link");
   aEl.addEventListener("click", showPopUp);
   function showPopUp(e) {
     e.preventDefault();
-    alert("k");
+    document.querySelector("#sk-pop-up").classList.remove("hidden");
     document.querySelector(
       ".skc-pic"
-    ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.jpg`;
+    ).src = `https://sh1ban.github.io/pictures/${sk.id}.png`;
     document.querySelector(".skc-name").textContent = sk.alias;
     document.querySelector(".sk-real-name").textContent = sk.realname;
     document.querySelector(".location").textContent = sk.location;
@@ -39,9 +39,19 @@ function showPic(sk) {
     document.querySelector(".killstreak").textContent = sk.killstreak;
     document.querySelector(".motive").textContent = sk.motive;
     document.querySelector(".weapon").textContent = sk.weapon;
+    document
+      .querySelector(".read-link")
+      .setAttribute("href", "profile.html?id=" + sk._id);
+    document
+      .querySelector(".close-button")
+      .addEventListener("click", closePopUp);
   }
   // .setAttribute("href", "pop-up.html?id=" + sk._id);
   clone.querySelector(".sk-pic").setAttribute("alt", sk.alias);
   const parent = document.querySelector("#pic-grid");
   parent.appendChild(clone);
+}
+
+function closePopUp() {
+  document.querySelector("#sk-pop-up").classList.add("hidden");
 }

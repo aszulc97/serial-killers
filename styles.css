@@ -24,6 +24,8 @@
 body {
   font-family: var(--secondary-font);
   background-color: var(--bg-color);
+  background-image: url("/darkbackground.png");
+  background-size: contain;
   color: var(--main-text-color);
 }
 
@@ -72,8 +74,8 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 1em 4em;
-  padding: 1em;
+  margin: 2em 4em;
+  padding: 4em;
   text-align: center;
 }
 
