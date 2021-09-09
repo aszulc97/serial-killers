@@ -37,7 +37,7 @@ h1 {
 header {
   display: flex;
   justify-content: flex-end;
-  background-color: var(--grey300);
+  background-color: var(--grey100);
   padding: 1em 0;
 }
 
@@ -53,6 +53,7 @@ header {
 main {
   display: grid;
   grid-template-rows: 1fr 2fr;
+  position: relative;
 }
 
 #subtitle {
@@ -63,12 +64,6 @@ main {
   padding: 1em;
 }
 
-#title {
-  font-size: 70px;
-  text-align: center;
-  margin-top: 1em;
-}
-
 #pic-grid {
   grid-row: 2/3;
   display: grid;
@@ -77,7 +72,7 @@ main {
   margin: 2em 4em;
   padding: 1em;
   text-align: center;
-  margin-top: -55em;
+  margin-top: -65em;
 }
 
 .sk-link {
@@ -108,6 +103,7 @@ button {
   margin: 20px 20px;
   border-radius: 50%;
   list-style: none;
+  box-shadow: 0 0 5px var(--grey50);
 }
 
 #back-button {
@@ -118,6 +114,55 @@ button {
 
 /* Pop up styling */
 
+.skc-txt {
+  display: grid;
+}
+
+.popup {
+  position: relative;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.close-me {
+  position: absolute;
+  right: 0;
+}
+
+.close-button {
+  color: var(--grey50);
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+#sk-card {
+  display: flex;
+  width: 80vw;
+  border: 1px solid var(--grey50);
+  box-shadow: 3px 3px 7px var(--grey50);
+  background-color: var(--grey300);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.read-more {
+  position: relative;
+  background-color: var(--bg-color);
+  width: 200px;
+  border-radius: 20px !important;
+}
+
+.read-link {
+  color: var(--yellow);
+  text-decoration: none;
+  font-size: 18px;
+}
 /* footer styling */
 
 footer {
