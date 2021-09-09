@@ -72,16 +72,18 @@ main {
 #subtitle {
   border: 1px solid var(--grey50);
   border-radius: 50px;
-  margin: 6em 10em;
+  margin: 4em 8em 2em 8em;
   padding: 1em;
+  font-size: 20px;
+  line-height: 1.7em;
 }
 
 #pic-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 2em 4em;
-  padding: 4em;
+  margin: 1em 4em;
+  padding: 0 4em 4em 4em;
   text-align: center;
 }
 
