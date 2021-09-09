@@ -54,28 +54,27 @@ header {
 
 /* main styling */
 main {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
   position: relative;
 }
 
+.sub-section {
+  height: max-content;
+}
+
 #subtitle {
-  grid-row: 1/2;
   border: 1px solid var(--grey50);
   border-radius: 50px;
-  margin: 2em 10em;
+  margin: 6em 10em;
   padding: 1em;
 }
 
 #pic-grid {
-  grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 2em 4em;
+  margin: 1em 4em;
   padding: 1em;
   text-align: center;
-  margin-top: -65em;
 }
 
 .sk-link {
@@ -91,6 +90,7 @@ main {
 .sk-name {
   text-decoration: none;
   color: var(--grey50);
+  margin-top: 2em;
 }
 
 /* Profile styling */
