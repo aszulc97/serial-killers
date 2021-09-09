@@ -42,9 +42,11 @@ header {
 }
 
 /* h1 will become img when logo is done! */
-.nav-bar h1 {
+
+.nav-bar a {
   margin-right: auto;
   margin-left: 1em;
+  height: 8em;
 }
 
 /* main styling */
@@ -53,16 +55,59 @@ main {
   grid-template-rows: 1fr 2fr;
 }
 
-#subtitle {
+#subtitle 
+  grid-row: 1/2;
   border: 1px solid var(--grey50);
   border-radius: 50px;
-  margin: 2em 4em;
+  margin: 2em 10em;
   padding: 1em;
 }
 
 #title {
   font-size: 70px;
   text-align: center;
+  margin-top: 1em;
+}
+
+#pic-grid {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 2em 4em;
+  padding: 1em;
+  text-align: center;
+  margin-top: -55em;
+}
+
+.sk-link {
+  margin: 5em 0;
+}
+
+.sk-pic {
+  border-radius: 60%;
+  border: 4px solid var(--yellow);
+}
+
+/* Profile styling */
+
+button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--yellow);
+  border: none;
+  color: var(--grey50);
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
+  border-radius: 50%;
+  list-style: none;
+}
+
+#back-button {
+  color: var(--grey50);
+  text-decoration: none;
+  font-size: 20px;
 }
 
 /* footer styling */
@@ -70,9 +115,6 @@ main {
 footer {
   background-color: var(--grey300);
   padding: 1em 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 footer p {
