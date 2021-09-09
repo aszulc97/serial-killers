@@ -16,6 +16,8 @@ fetch(url, options)
   });
 
 function showProfile(sk) {
-  //   document.querySelector(".profile-pic").src = ;
+  document.querySelector(
+    ".profile-pic"
+  ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.jpg`;
   document.querySelector(".sk-info").textContent = sk.info;
 }

@@ -21,12 +21,17 @@ function showPic(sk) {
   const shCard = document.querySelector("#pic-card").content;
   const clone = shCard.cloneNode(true);
   clone.querySelector(".sk-name").textContent = sk.alias;
-  // clone.querySelector(".sk-pic").src = ;
+  // clone.querySelector(
+  //   ".sk-pic"
+  // ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.jpg`;
   const aEl = clone.querySelector(".sk-link");
   aEl.addEventListener("click", showPopUp);
   function showPopUp(e) {
     e.preventDefault();
     alert("k");
+    document.querySelector(
+      ".skc-pic"
+    ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.jpg`;
     document.querySelector(".skc-name").textContent = sk.alias;
     document.querySelector(".sk-real-name").textContent = sk.realname;
     document.querySelector(".location").textContent = sk.location;
