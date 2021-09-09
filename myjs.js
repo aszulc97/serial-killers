@@ -32,10 +32,6 @@ function showPic(sk) {
   } else {
     clone.querySelector(".sk-name").textContent = sk.realname;
   }
-  //clone.querySelector(".sk-name").textContent = sk.alias;
-  clone.querySelector(
-    ".sk-pic"
-  ).src = `https://sh1ban.github.io/pictures/${sk.id}.png`;
   const aEl = clone.querySelector(".sk-link");
   aEl.addEventListener("click", showPopUp);
   function showPopUp(e) {
@@ -43,7 +39,7 @@ function showPic(sk) {
     document.querySelector("#sk-pop-up").classList.remove("hidden");
     document.querySelector(
       ".skc-pic"
-    ).src = `https://ailu-torreval.github.io/sk-pics/1112m.png`;
+    ).src = `https://ailu-torreval.github.io/sk-pics/${sk.id}m.png`;
     if (sk.alias) {
       document.querySelector(".skc-name").textContent = sk.alias;
     } else {
