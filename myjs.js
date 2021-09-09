@@ -17,14 +17,25 @@ function handlePics(data) {
 }
 
 function showPic(sk) {
+  if (sk.alias === null) {
+    sk.alias = sk.realname;
+  }
   console.log(sk);
   console.log(sk.id);
   const shCard = document.querySelector("#pic-card").content;
   const clone = shCard.cloneNode(true);
-  clone.querySelector(".sk-name").textContent = sk.alias;
   clone.querySelector(
     ".sk-pic"
   ).src = `https://ailu-torreval.github.io/sk-pics/${sk.id}s.png`;
+  if (sk.alias) {
+    clone.querySelector(".sk-name").textContent = sk.alias;
+  } else {
+    clone.querySelector(".sk-name").textContent = sk.realname;
+  }
+  //clone.querySelector(".sk-name").textContent = sk.alias;
+  clone.querySelector(
+    ".sk-pic"
+  ).src = `https://sh1ban.github.io/pictures/${sk.id}.png`;
   const aEl = clone.querySelector(".sk-link");
   aEl.addEventListener("click", showPopUp);
   function showPopUp(e) {
@@ -33,7 +44,11 @@ function showPic(sk) {
     document.querySelector(
       ".skc-pic"
     ).src = `https://ailu-torreval.github.io/sk-pics/1112m.png`;
-    document.querySelector(".skc-name").textContent = sk.alias;
+    if (sk.alias) {
+      document.querySelector(".skc-name").textContent = sk.alias;
+    } else {
+      document.querySelector(".skc-name").textContent = sk.realname;
+    }
     document.querySelector(".sk-real-name").textContent = sk.realname;
     document.querySelector(".location").textContent = sk.location;
     document.querySelector(".years").textContent = sk.activity;
