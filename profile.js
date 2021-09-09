@@ -22,3 +22,16 @@ function showProfile(sk) {
   document.querySelector(".sk-alias").innerHTML = sk.alias;
   document.querySelector(".sk-info").innerHTML = sk.info;
 }
+
+/* comment section */
+
+document.querySelector(".commentSubmit").addEventListener("click", submitComment);
+
+function submitComment() {
+  const comment = document.querySelector(".comment").content;
+  const clone = comment.cloneNode(true);
+  clone.querySelector("h4").textContent = document.querySelector(".commentName").value;
+  clone.querySelector("p").textContent = document.querySelector(".commentText").value;
+  const parent = document.querySelector("section");
+  parent.appendChild(clone);
+}

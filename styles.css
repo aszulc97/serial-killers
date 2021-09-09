@@ -183,3 +183,9 @@ p a {
   text-decoration: none;
   color: var(--yellow);
 }
+
+/*comments section*/
+
+textarea {
+  width: 24rem;
+}
