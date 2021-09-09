@@ -8,9 +8,14 @@ const options = {
   },
 };
 
+let dataset = [];
+
 fetch(url, options)
   .then((response) => response.json())
-  .then((data) => handlePics(data));
+  .then((data) => (dataset = data));
+
+console.log(dataset);
+handlePics(dataset);
 
 function handlePics(data) {
   data.forEach(showPic);
@@ -22,6 +27,7 @@ function showPic(sk) {
   const shCard = document.querySelector("#pic-card").content;
   const clone = shCard.cloneNode(true);
   clone.querySelector(".sk-name").textContent = sk.alias;
+  clone.querySelector(".sk-link").addEventListener("click", showSkCard);
   const parent = document.querySelector("#pic-grid");
   parent.appendChild(clone);
 }
@@ -37,23 +43,28 @@ function showPic(sk) {
 //   parent.appendChild(clone);
 // }
 
-// function showSkCard(skc) {
-//   console.log("done");
-//   document.querySelector(".sk-link").removeEventListener("click", showSkCard);
-//   const shSkCard = document.querySelector("#sk-card").content;
-//   const copy = shSkCard.cloneNode(true);
-//   copy.querySelector(".skc-name").textContent = skc.alias;
-//   // copy.querySelector(".sk-real-name").textContent = skc.;
+function showSkCard(skc) {
+  console.log("done");
+  console.log(skc.target);
+  document.querySelector(".sk-link").removeEventListener("click", showSkCard);
+  const shSkCard = document.querySelector("#sk-card").content;
+  const copy = shSkCard.cloneNode(true);
+  copy.querySelector(".skc-name").textContent = skc.target.textContent;
+  // copy.querySelector(".sk-real-name").textContent = skc.;
 
-//   // clone.querySelector(".sk-pic").src = ;
+  // clone.querySelector(".sk-pic").src = ;
 
-//   const parent = document.querySelector("#pic-grid");
-//   parent.appendChild(copy);
-//   //show card
-//   //add event listener for closing tab
-//   //clone template, add to parent
+  const parent = document.querySelector("#pic-grid");
+  parent.appendChild(copy);
+  //show card
+  //add event listener for closing tab
+  //clone template, add to parent
+}
+
+// function search(el) {
+//   let result;
+//   for (let i=0; i<da)
 // }
-
 {
   /* <template id="pic-card">
 <div class="sk-link">
