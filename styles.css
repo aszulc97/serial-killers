@@ -1,6 +1,7 @@
 /* True Crime */
 
 @import url("https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 
 * {
   box-sizing: border-box;
@@ -34,6 +35,12 @@ h1 {
   color: var(--yellow);
 }
 
+h2 {
+  font-family: var(--primary-font);
+  color: var(--grey100);
+  text-decoration: underline;
+}
+
 /* Header styling */
 
 header {
@@ -56,28 +63,29 @@ header {
 
 /* main styling */
 main {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
   position: relative;
 }
 
+.sub-section {
+  height: max-content;
+}
+
 #subtitle {
-  grid-row: 1/2;
   border: 1px solid var(--grey50);
   border-radius: 50px;
-  margin: 2em 10em;
+  margin: 4em 8em 2em 8em;
   padding: 1em;
+  font-size: 20px;
+  line-height: 1.7em;
 }
 
 #pic-grid {
-  grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 2em 4em;
-  padding: 4em;
+  margin: 1em 4em;
+  padding: 0 4em 4em 4em;
   text-align: center;
-  margin-top: -65em;
 }
 
 .sk-link {
@@ -86,6 +94,7 @@ main {
 }
 
 .sk-pic {
+  max-width: 250px;
   border-radius: 60%;
   border: 4px solid var(--yellow);
 }
@@ -93,6 +102,11 @@ main {
 .sk-name {
   text-decoration: none;
   color: var(--grey50);
+  margin-top: 2em;
+}
+
+.sk-name:hover {
+  color: var(--yellow);
 }
 
 /* Profile styling */
@@ -102,17 +116,26 @@ button {
   height: 40px;
   background-color: var(--yellow);
   border: none;
-  color: var(--grey50);
+  color: var(--grey100);
   text-align: center;
   text-decoration: none;
   margin: 20px 20px;
   border-radius: 50%;
   list-style: none;
+}
+
+button:hover {
   box-shadow: 0 0 5px var(--grey50);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 0 5px var(--grey50);
+  transform: translateY(4px);
 }
 
 #back-button {
-  color: var(--grey50);
+  color: var(--grey100);
   text-decoration: none;
   font-size: 20px;
 }
@@ -130,8 +153,14 @@ button {
 ul li {
   list-style: none;
   padding-left: 5px;
+  font-weight: bold;
+  color: var(--grey100);
 }
 
+li span {
+  font-weight: normal;
+  color: var(--grey50);
+}
 .close-me {
   position: absolute;
   right: 0;
@@ -146,14 +175,20 @@ ul li {
 
 #sk-card {
   display: flex;
-  width: 80vw;
-  border: 1px solid var(--grey50);
-  box-shadow: 3px 3px 7px var(--grey50);
+  /* width: 80vw; */
+  box-shadow: 3px 3px 7px;
   background-color: var(--grey300);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
+  /* max-width: 200px;
+  height: auto; */
+}
+
+.skc-pic {
+  border-radius: 20px;
 }
 
 .read-more {
@@ -168,11 +203,34 @@ ul li {
   text-decoration: none;
   font-size: 18px;
 }
+
+/* Profile styling */
+
+.sk-alias {
+  font-size: 60px;
+  text-align: center;
+}
+
+.sk-info h1 {
+  color: var(--grey50);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.sk-info {
+  margin: 0 3em;
+}
+
+.sk-info p {
+  padding: 10px;
+}
+
 /* footer styling */
 
 footer {
   background-color: var(--grey300);
   padding: 1em 0;
+  margin-top: 100px;
 }
 
 footer p {

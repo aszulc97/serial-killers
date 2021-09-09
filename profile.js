@@ -16,9 +16,7 @@ fetch(url, options)
   });
 
 function showProfile(sk) {
-  document.querySelector(
-    ".profile-pic"
-  ).src = `https://storage.cloud.google.com/truecrime/compresed/${sk.id}.png`;
+  document.querySelector(".profile-pic").src = `https://sh1ban.github.io/pictures/${sk.id}.png`;
   document.querySelector(".sk-alias").innerHTML = sk.alias;
   document.querySelector(".sk-info").innerHTML = sk.info;
 }
