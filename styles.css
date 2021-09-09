@@ -34,6 +34,12 @@ h1 {
   color: var(--yellow);
 }
 
+h2 {
+  font-family: var(--primary-font);
+  color: var(--grey100);
+  text-decoration: underline;
+}
+
 /* Header styling */
 
 header {
@@ -96,6 +102,10 @@ main {
   margin-top: 2em;
 }
 
+.sk-name:hover {
+  color: var(--yellow);
+}
+
 /* Profile styling */
 
 button {
@@ -103,17 +113,26 @@ button {
   height: 40px;
   background-color: var(--yellow);
   border: none;
-  color: var(--grey50);
+  color: var(--grey100);
   text-align: center;
   text-decoration: none;
   margin: 20px 20px;
   border-radius: 50%;
   list-style: none;
+}
+
+button:hover {
   box-shadow: 0 0 5px var(--grey50);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 0 5px var(--grey50);
+  transform: translateY(4px);
 }
 
 #back-button {
-  color: var(--grey50);
+  color: var(--grey100);
   text-decoration: none;
   font-size: 20px;
 }
@@ -182,11 +201,33 @@ li span {
   font-size: 18px;
 }
 
+/* Profile styling */
+
+.sk-alias {
+  font-size: 60px;
+  text-align: center;
+}
+
+.sk-info h1 {
+  color: var(--grey50);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.sk-info {
+  margin: 0 3em;
+}
+
+.sk-info p {
+  padding: 10px;
+}
+
 /* footer styling */
 
 footer {
   background-color: var(--grey300);
   padding: 1em 0;
+  margin-top: 100px;
 }
 
 footer p {
