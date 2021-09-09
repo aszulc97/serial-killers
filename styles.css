@@ -109,6 +109,15 @@ main {
   color: var(--yellow);
 }
 
+.skc-txt {
+  padding-left: 20px;
+  font-size: 1em;
+  line-height: 1.9;
+}
+
+.skc-txt h1 {
+  font-size: 2.3em;
+}
 /* Profile styling */
 
 button {
@@ -175,10 +184,10 @@ li span {
 
 #sk-card {
   display: flex;
-  /* width: 80vw; */
+  width: 60vw;
   box-shadow: 3px 3px 7px;
   background-color: var(--grey300);
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -197,6 +206,7 @@ li span {
   background-color: var(--bg-color);
   width: 200px;
   border-radius: 20px !important;
+  left: 17em;
 }
 
 .read-link {
@@ -223,7 +233,16 @@ li span {
 }
 
 .sk-info p {
-  padding: 10px;
+  padding: 1em 10em;
+}
+
+.profile-pic {
+  position: relative;
+  left: 45%;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 300px;
 }
 
 /* footer styling */
@@ -236,6 +255,7 @@ footer {
 
 footer p {
   margin-left: 2em;
+  text-align: center;
 }
 
 p a {
