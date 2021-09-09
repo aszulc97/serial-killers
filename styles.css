@@ -145,13 +145,13 @@ ul li {
 #sk-card {
   display: flex;
   width: 80vw;
-  border: 1px solid var(--grey50);
-  box-shadow: 3px 3px 7px var(--grey50);
+  box-shadow: 3px 3px 7px;
   background-color: var(--grey300);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 .read-more {
@@ -166,6 +166,7 @@ ul li {
   text-decoration: none;
   font-size: 18px;
 }
+
 /* footer styling */
 
 footer {
