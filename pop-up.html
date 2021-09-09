@@ -11,11 +11,12 @@
 
 <body>
     <header class="nav-bar">
-        <h1 class="logo">LOGO</h1>
+        <a href="index.html">
+            <img id="logo" src="logo.png" alt="logo">
+        </a>
     </header>
     <main>
         <section>
-            <h1 id="title">Serial Killers</h1>
             <p id="subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem numquam magnam,
                 quia quidem itaque dolores inventore sint quo, dolor corrupti incidunt nulla aliquam consequuntur
@@ -28,12 +29,13 @@
             </p>
         </section>
 
-        <section id="sk-card">
+        <section class="popup" id="sk-card">
             <img src="/candy-man.jpeg" class="skc-pic">
             <div class="skc-txt">
                 <h1 class="skc-name"></h1>
                 <h2 class="sk-real-name"></h2>
-                <a href="index.html" class="close-button">X</a>
+                <button class="close-me"><a href="index.html" class="close-button">X</a></button>
+                
                 <ul>
                     <li>Location: <span class="location"></span></li>
                     <li>Years of Activity: <span class="years"></span></li>
@@ -46,10 +48,10 @@
             </div>
         </section>
     </main>
-    <!-- <footer>
+    <footer>
         <p>This Web is an assignment for KEA. Source: <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
         </p>
-    </footer> -->
+    </footer>
 </body>
 
 <script src="pop-up.js"></script>
