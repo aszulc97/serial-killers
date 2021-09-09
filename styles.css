@@ -41,6 +41,9 @@ header {
   padding: 1em 0;
 }
 
+.hidden {
+  display: none;
+}
 /* h1 will become img when logo is done! */
 
 .nav-bar a {

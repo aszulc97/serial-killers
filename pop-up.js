@@ -16,13 +16,20 @@ fetch(url, options)
   });
 
 function showSk(sk) {
-  //   document.querySelector(".skc-pic").src = ;
+  console.log(sk.img);
+  document.querySelector(".skc-pic").src =
+    "https://serialkillers-7bdb.restdb.io/media/" +
+    sk.img +
+    "?key=" +
+    sk.img.access_key;
   document.querySelector(".skc-name").textContent = sk.alias;
   document.querySelector(".sk-real-name").textContent = sk.realname;
   document.querySelector(".location").textContent = sk.location;
   document.querySelector(".years").textContent = sk.activity;
   document.querySelector(".killstreak").textContent = sk.killstreak;
-  //   document.querySelector(".gender").textContent = sk.gender;
   document.querySelector(".motive").textContent = sk.motive;
   document.querySelector(".weapon").textContent = sk.weapon;
+  document
+    .querySelector(".read-link")
+    .setAttribute("href", "profile.html?id=" + sk._id);
 }
