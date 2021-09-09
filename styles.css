@@ -3,80 +3,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --yellow: #f9d502; 
-    --grey50: #9d9d9d;
-    --grey100: #595959;
-    --grey200: #302f37;
-    --grey300: #333333;
-    --bg-color: #404040;
+  --yellow: #f9d502;
+  --grey50: #9d9d9d;
+  --grey100: #595959;
+  --grey200: #302f37;
+  --grey300: #333333;
+  --bg-color: #404040;
 
-    --primary-font: "Days One", sans-serif;
-    --secondary-font: "Montserrat", sans-serif;
-    --main-text-color: #9d9d9d;
+  --primary-font: "Days One", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --main-text-color: #9d9d9d;
 }
 
 body {
-    font-family: var(--secondary-font);
-    background-color: var(--bg-color);
-    color: var(--main-text-color);
+  font-family: var(--secondary-font);
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
 }
 
 h1 {
-    font-family: var(--primary-font);
-    color: var(--yellow);
+  font-family: var(--primary-font);
+  color: var(--yellow);
 }
 
 /* Header styling */
 
 header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--grey300);
-    padding: 1em 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--grey300);
+  padding: 1em 0;
 }
 
 /* h1 will become img when logo is done! */
 .nav-bar h1 {
-    margin-right: auto;
-    margin-left: 1em;
+  margin-right: auto;
+  margin-left: 1em;
 }
 
 /* main styling */
 main {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
 }
 
 #subtitle {
-    border: 1px solid var(--grey50);
-    border-radius: 50px;
-    margin: 2em 4em;
-    padding: 1em;
+  border: 1px solid var(--grey50);
+  border-radius: 50px;
+  margin: 2em 4em;
+  padding: 1em;
 }
 
 #title {
-    font-size: 70px;
-    text-align: center;
+  font-size: 70px;
+  text-align: center;
 }
-
 
 /* footer styling */
 
 footer {
-    background-color: var(--grey300);
-    padding: 1em 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    
+  background-color: var(--grey300);
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
-    margin-left: 2em;
+  margin-left: 2em;
 }

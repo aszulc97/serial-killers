@@ -22,35 +22,43 @@ function showPic(sk) {
   const clone = shCard.cloneNode(true);
   clone.querySelector(".sk-name").textContent = sk.alias;
   // clone.querySelector(".sk-pic").src = ;
-  //add an id with the id for the next function to understand where are you clicking
-  clone.querySelector(".sk-link").addEventListener("click", clicked);
-
+  clone
+    .querySelector(".sk-link")
+    .setAttribute("href", "pop-up.html?id=" + sk._id);
+  clone.querySelector(".sk-pic").setAttribute("alt", sk.alias);
   const parent = document.querySelector("#pic-grid");
   parent.appendChild(clone);
 }
 
-function clicked(event) {
-  showSkCard(event.target);
-  // event.target.classList.add("clicked");
-}
+// function clicked(data) {
+//   console.log("hello");
 
-function showSkCard(sk) {
-  console.log("done");
-  console.log(sk.alias);
-  document.querySelector(".sk-link").removeEventListener("click", showSkCard);
-  const shSkCard = document.querySelector("#sk-card").content;
-  const copy = shSkCard.cloneNode(true);
-  copy.querySelector(".skc-name").textContent = sk.alias;
-  copy.querySelector(".sk-real-name").textContent = sk.realname;
+//   document.querySelector("sk-link").forEach(showSkCard);
+// }
 
-  // clone.querySelector(".sk-pic").src = ;
+// // function clicked(event) {
+// //   showSkCard(event.target);
+// //   console.log(sk);
+// //   // event.target.classList.add("clicked");
+// // }
 
-  const parent = document.querySelector("main");
-  parent.appendChild(copy);
-  //show card
-  //add event listener for closing tab
-  //clone template, add to parent
-}
+// function showSkCard(sk) {
+//   console.log("sk");
+//   console.log(sk.alias);
+//   document.querySelector(".sk-link").removeEventListener("click", showSkCard);
+//   const shSkCard = document.querySelector("#sk-card").content;
+//   const copy = shSkCard.cloneNode(true);
+//   copy.querySelector(".skc-name").textContent = sk.alias;
+//   copy.querySelector(".sk-real-name").textContent = sk.realname;
+
+//   // clone.querySelector(".sk-pic").src = ;
+
+//   const parent = document.querySelector("main");
+//   parent.appendChild(copy);
+// show card
+// add event listener for closing tab
+// clone template, add to parent
+//}
 
 {
   /* <template id="pic-card">
