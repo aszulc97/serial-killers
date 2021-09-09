@@ -85,6 +85,7 @@ main {
 }
 
 .sk-pic {
+  max-width: 250px;
   border-radius: 60%;
   border: 4px solid var(--yellow);
 }
@@ -130,8 +131,14 @@ button {
 ul li {
   list-style: none;
   padding-left: 5px;
+  font-weight: bold;
+  color: var(--grey100);
 }
 
+li span {
+  font-weight: normal;
+  color: var(--grey50);
+}
 .close-me {
   position: absolute;
   right: 0;
@@ -146,13 +153,19 @@ ul li {
 
 #sk-card {
   display: flex;
-  width: 80vw;
+  /* width: 80vw; */
   box-shadow: 3px 3px 7px;
   background-color: var(--grey300);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
+  /* max-width: 200px;
+  height: auto; */
+}
+
+.skc-pic {
   border-radius: 20px;
 }
 
