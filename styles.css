@@ -25,7 +25,7 @@
 body {
   font-family: var(--secondary-font);
   background-color: var(--bg-color);
-  background-image: url("/darkbackground.png");
+  background-image: url("../darkbackground.png");
   background-size: contain;
   color: var(--main-text-color);
 }
@@ -206,7 +206,7 @@ li span {
   background-color: var(--bg-color);
   width: 200px;
   border-radius: 20px !important;
-  left: 22em;
+  left: 2em;
   bottom: -2em;
 }
 
